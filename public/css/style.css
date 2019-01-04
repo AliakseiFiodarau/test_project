@@ -1,0 +1,970 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.head_logo {
+    background-color: white;
+    width: 22%;
+    height: 100px;
+    object-fit: contain;
+    float: left;
+}
+
+.head_name {
+    height: 100px;
+    background-color: #000000;
+}
+
+.head_name h1 {
+    font: bold 200% Gungsuh, Roboto, sans-serif;
+    color: white;
+    width: auto;
+    padding: 1.2%;
+    text-align: center;
+
+}
+
+.header span {
+    font: bold 100% Gungsuh, Roboto, sans-serif;
+    color: #d71421;
+}
+
+.away {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.away_logo {
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.upper_menu {
+    position: sticky;
+    top: 0;
+    font: bold 110% Gungsuh, Roboto, sans-serif;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+.upper_menu a {
+    font: bold 110% Gungsuh, Roboto, sans-serif;
+    color: black;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.upper_menu a:hover {
+    text-decoration-line: overline underline;
+}
+
+.upper_menu span {
+    color: rgba(215, 20, 33, 0.98);
+    font: bold 100% Gungsuh, Roboto, sans-serif;
+}
+
+.side_menu_brands {
+    font: bold 115% Gungsuh, Roboto, sans-serif;
+}
+
+.side_menu {
+    font: bold 140% Roboto, sans-serif;
+    text-align: left;
+    width: 160px;
+    padding: 10px;
+}
+
+.side_menu span {
+    color: rgba(215, 20, 33, 0.98);
+    font: bold 100% Roboto, sans-serif;
+}
+
+.side_menu a {
+    display: block;
+    margin: 13px;
+    font: 70% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.side_menu a:hover {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.container {
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    margin: 0 4%;
+}
+
+.block_name {
+    font: bold 75% Gungsuh, Roboto, sans-serif;
+    align-self: flex-start;
+    width: 100%;
+    margin: 2%;
+}
+
+.block_name span {
+    color: rgba(215, 20, 33, 0.98);
+}
+
+.block_name a {
+    color: black;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.block_name a:hover {
+    text-decoration-line: overline underline;
+}
+
+.newest {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 1.5%;
+}
+
+.newest a {
+    text-decoration: none;
+}
+
+.newest_block {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 180px;
+    height: 180px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.newest_block div {
+    font: 110% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.newest_block:hover {
+    padding: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.newest_block div img {
+    display: block;
+    object-fit: contain;
+    align-self: flex-end;
+    width: 180px;
+    height: 120px;
+}
+
+.text {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 1.5%;
+}
+
+.text_block {
+    display: flex;
+    flex-flow: row;
+    padding: 4px;
+    height: 110px;
+    min-width: 820px;
+}
+
+.text_image {
+    align-self: center;
+    object-fit: contain;
+    width: 140px;
+    height: 100px;
+    padding: 4px;
+}
+
+.text_block:hover {
+    padding: 1px;
+    border: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.text a {
+    text-decoration: none;
+}
+
+.text_preview {
+    text-align: justify;
+    max-height: inherit;
+    overflow: hidden;
+    width: 85%;
+}
+
+.text_preview h1 {
+    padding: 0.6% 0% 0.6% 3%;
+    align-self: center;
+    font: bold 110% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.text_preview p {
+    font: 100% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0% 1% 0% 1%;
+}
+
+.text_preview h2 {
+    font: 70% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0.5% 0% 0% 3%;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    font: 90% Roboto, sans-serif;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.inner_block_name {
+    font: 140% Roboto, sans-serif;
+    width: 100%;
+    margin: 2%;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 3px;
+}
+
+.inner_block_name a {
+    text-decoration: none;
+    font: 140% Roboto, sans-serif;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 3px;
+}
+
+.inner_block_name a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.item {
+    font: bold 100% Roboto, sans-serif;
+    width: 100%;
+    padding: 1.5%;
+}
+
+.item_image {
+    object-fit: contain;
+    width: 80%;
+    padding: 3%;
+}
+
+.item table {
+    border-spacing: 18px;
+    margin: auto;
+}
+
+.item td {
+    font: 100% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.item td:first-child {
+    width: 115px;
+    text-align: right;
+}
+
+.item td img {
+    object-fit: contain;
+    height: 18px;
+}
+
+.review_link {
+    text-decoration: none;
+}
+
+.article h1 {
+    all: initial;
+    padding: 3%;
+    font: bold 140% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 200%;
+}
+
+.article img {
+    padding: 5%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    width: 70%;
+}
+
+.article_text {
+    text-align: justify;
+    font: 100% Roboto, sans-serif;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 0.7);
+    width: 95%;
+}
+
+.article_text p {
+    font: 100% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 2%;
+}
+
+.pubdate {
+    font: 100% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 2% 10% 1% 0%;
+    text-align: right;
+}
+
+.author {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 1%;
+    border-bottom: solid;
+}
+
+.author img {
+    all: initial;
+    object-fit: contain;
+    height: 80px;
+}
+
+.author h2 {
+    padding-left: 15%;
+    align-self: center;
+    font: bold 110% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.comments {
+    text-align: justify;
+    display: flex;
+    flex-flow: column;
+    padding: 2% 0% 2% 8%;
+    font: bold 110% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.comment {
+    display: flex;
+    flex-flow: row;
+}
+
+.comment div {
+    margin: 1%
+}
+
+.comment_text {
+    width: 82%;
+    font: 80% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    word-wrap: break-word;
+}
+
+.comment_textarea {
+    width: 95%;
+    font: 80% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    word-wrap: break-word;
+}
+
+.comment img {
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.comment h2 {
+    font: bold 110% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 1%;
+}
+
+.comment h3 {
+    font: 100% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 2% 10% 1% 0%;
+    text-align: right;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+}
+
+.about_us {
+    margin: auto;
+    width: 85%;
+    padding-bottom: 15%;
+}
+
+.about_us h1 {
+    font: bold 200% Gungsuh, Roboto, sans-serif;
+    color: black;
+    text-align: center;
+    padding: 3%;
+    margin: auto;
+}
+
+.about_us h1 span {
+    color: #d71421;
+}
+
+.about_us h2 {
+    padding: 2%;
+    margin: auto;
+    font: bold 110% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 100%;
+    text-align: justify;
+    width: 87%;
+}
+
+.about_us p {
+    margin: auto;
+    text-align: justify;
+    font: 100% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    width: 95%;
+}
+
+.delivery {
+    padding: 1.5%;
+}
+
+.delivery_block {
+    display: flex;
+    flex-flow: row;
+}
+
+.delivery_block div {
+    padding-bottom: 4%;
+}
+
+.delivery_block div img {
+    object-fit: contain;
+    width: 100px;
+    height: 65px;
+    padding-top: 40px;
+}
+
+.news {
+    padding: 1.5%;
+}
+
+.news a {
+    text-decoration: none;
+}
+
+.shop {
+    padding: 1.5%;
+}
+
+.bottom {
+    height: 100px;
+    width: 100%;
+}
+
+.page_numbers {
+    display: flex;
+    padding: 1%;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+}
+
+.page_numbers a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.page_numbers a:hover {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.button {
+    height: 20px;
+    min-width: 20px;
+    font: bold 110% Roboto, sans-serif;
+    padding: 8px;
+    margin: 4px;
+    text-align: center;
+}
+
+.this_button {
+    color: #d71421;
+    height: 20px;
+    min-width: 20px;
+    font: bold 110% Roboto, sans-serif;
+    padding: 8px;
+    margin: 4px;
+    text-align: center;
+}
+
+.away_and_register {
+    float: right;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 180px;
+}
+
+.register {
+    align-self: flex-end;
+    display: flex;
+    width: 235px;
+    height: 50px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    font: bold 100% Roboto, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.register_buttons {
+    text-align: center;
+    width: 70%;
+}
+
+#register_button a {
+    cursor: pointer;
+    margin: 4px;
+    padding: 4px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#register_button:hover {
+    text-decoration-line: overline underline;
+}
+
+.upper_avatar {
+    margin: 5px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.upper_avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+#sign_in_button {
+    cursor: pointer;
+    margin: 4px;
+    padding: 4px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.sign_in_textfield {
+    padding: 8px;
+}
+
+#sign_in_button:hover {
+    text-decoration-line: overline underline;
+}
+
+#sign_in_form {
+    text-align: left;
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 275px;
+    height: 140px;
+    z-index: 999;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: rgba(125, 125, 125, 0.9);
+    padding: 3%;
+}
+
+#close_button {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.sign_in_form form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 90px;
+}
+
+.sign_in_submit {
+    align-self: flex-end;
+}
+
+.sign_in_submit input {
+    cursor: pointer;
+    background-color: white;
+    font: bold 90% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+    padding: 5%;
+    border: none;
+}
+
+.sign_in_error {
+    font: bold 80% Roboto, sans-serif;
+    color: #d71421;
+}
+
+.username_and_sign_out {
+    display: flex;
+    flex-flow: row wrap;
+    width: 172px;
+    justify-content: space-between;
+}
+
+.username_and_sign_out a {
+    padding-bottom: 4px;
+    height: 40px;
+    width: 145px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.username_and_sign_out a:hover {
+    cursor: pointer;
+    text-decoration: overline underline;
+}
+
+.sign_out_button input {
+    align-self: flex-end;
+    width: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    font: bold 90% Roboto, sans-serif;
+    background-color: #d71421;;
+    border: none;
+}
+
+.sign_out_button input:active {
+    outline: none;
+}
+
+.registration {
+    padding: 1.5%;
+}
+
+.register_form {
+    font: 100% Roboto, sans-serif;
+    margin: 3% auto;
+}
+
+.register_form div {
+    padding: 1.2%;
+    line-height: 1.4;
+}
+
+.sign_up_submit input {
+    cursor: pointer;
+    background-color: white;
+    font: bold 120% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+    padding: 1%;
+    width: 100px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sign_up_submit input:hover {
+    color: #d71421;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sign_up_submit input:active {
+    outline: none;
+}
+
+.sign_up_submit input:focus {
+    outline: none;
+}
+
+.error {
+    font: 100% Roboto, sans-serif;
+    color: #d71421;
+    margin: 10px;
+}
+
+.user {
+    padding: 1.5%;
+    font: 120% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.user_page {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.user_info {
+    align-self: flex-start;
+    width: available;
+    min-width: 50%;
+    font: 100% Roboto, sans-serif;
+    margin: 0 3% auto;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.user_info div {
+    margin: 2%;
+    width: 90%;
+    padding: 1.2%;
+    line-height: 1.4;
+}
+
+.user_portrait {
+    text-align: center;
+    width: 300px;
+    height: 330px;
+    object-fit: contain;
+    padding: 1.5%;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.user_portrait img {
+    max-width: 95%;
+    max-height: 80%;
+}
+
+.change {
+    cursor: pointer;
+    font: bold 95% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+    padding: 1%;
+    margin: 1%;
+    width: 100px;
+    height: 38px;
+    border: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.change:hover {
+    color: #d71421;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.textfield {
+    padding: 1%;
+    width: 100%;
+}
+
+.file_upload {
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+    width: 300px;
+    height: 38px;
+    background-color: red;
+}
+
+.fake_file_upload {
+    cursor: pointer;
+    background-color: white;
+    font: bold 95% Roboto, sans-serif;
+    line-height: 2em;
+    color: rgba(0, 0, 0, 0.85);
+    width: 300px;
+    height: 38px;
+    margin: 1% 0;
+    border: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.fake_file_upload:hover {
+    color: #d71421;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.item_link {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+.item_link:hover {
+    color: #d71421;
+}
+
+.review_author_img {
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.being_spider_jerusalem {
+    font: bold 110% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+    padding: 1.5%;
+}
+
+.being_spider_jerusalem a {
+    color: rgba(0, 0, 0, 0.85);
+    text-decoration: none;
+}
+
+.being_spider_jerusalem a:hover {
+    color: #d71421;
+}
+
+#_sign_in_button {
+    cursor: pointer;
+}
+
+#_sign_in_button:hover {
+    color: #d71421;
+}
+
+.like {
+    margin: 1%;
+    padding: 1.5%;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.like:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.rating_grid {
+    font: 100% Roboto, sans-serif;
+    margin: 1.5%;
+    width: 320px;
+    height: 40px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "like dislike heart rating eye views";
+}
+
+.like_button {
+    grid-area: like;
+}
+
+.like_img {
+    object-fit: contain;
+}
+
+.heart {
+    grid-area: heart;
+}
+
+.rating {
+    grid-area: rating;
+}
+
+.dislike_button {
+    grid-area: dislike;
+}
+
+.eye {
+    grid-area: eye;
+}
+
+.eye_img {
+    object-fit: contain;
+}
+
+.views {
+    grid-area: views;
+}
+
+.article_upload_image {
+    object-fit: contain;
+    padding: 1.5%;
+}
+
+.article_upload_image img {
+    height: 400px;
+    object-fit: contain;
+}
+
+.buy {
+    margin: 2% 0 5% 41%;
+}
+
+.buy_button {
+    text-decoration-line: none;
+    font: bold 95% Roboto, sans-serif;
+    color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.buy_button:hover {
+    cursor: pointer;
+    text-align: center;
+    color: #d71421;
+    padding: 17px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border: 3px solid rgb(214, 21, 34);
+}
+
+.order_info {
+    width: 60%;
+    font: 100% Roboto, sans-serif;
+    padding: 2% 4% 2% 2%;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+.accepted {
+    font: 120% Roboto, sans-serif;
+    color: rgba(66, 195, 7, 0.81);
+    margin: 5%;
+}
