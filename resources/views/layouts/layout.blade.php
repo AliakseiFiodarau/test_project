@@ -16,11 +16,11 @@
         <div class="away">
             <a href=""><img class="away_logo" src="{{asset('images/away/facebook_logo.png')}}"></a>
             <a href=""><img class="away_logo" src="{{asset('images/away/inst_logo.png')}}"></a>
-            <a href="https://vk.com/id100791549" target="_blank"><img class="away_logo"                                                                      src="{{asset('images/away/vkcom_logo.png')}}"></a>
+            <a href="" target="_blank"><img class="away_logo" src="{{asset('images/away/vkcom_logo.png')}}"></a>
             <a href=""><img class="away_logo" src="{{asset('images/away/telegram_logo.png')}}"></a>
             <a href=""><img class="away_logo" src="{{asset('images/away/twitter_logo.png')}}"></a>
         </div>
-        @include('layouts\registerBar')
+        @include('layouts.registerBar')
     </div>
     <div class="head_name">
         <h1><span>heartbeat</span> and chain <br> bikeshop</h1>
@@ -30,7 +30,7 @@
 <div class="content">
     <div class="upper_menu">
         <nav>
-            <a href="/"> <span>M</span>AIN </a>
+            {{--<a href="/"> <span>M</span>AIN </a>--}}
             <a href="{{url('latest')}}"> <span>L</span>ATEST </a>
             <a href="{{url('items')}}"> <span>S</span>HOP </a>
             <a href="{{url('articles')}}"> <span>A</span>RTICLES </a>

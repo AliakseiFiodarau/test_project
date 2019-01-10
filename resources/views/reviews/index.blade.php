@@ -13,7 +13,7 @@
                             <h1> {{$review->review_name}} </h1>
                             <p>{{mb_substr($review->review_text,
                             0,
-                            250,
+                            228,
                             'utf-8')}}...
                             </p>
                             <h2>{{mb_substr($review->pubdate,

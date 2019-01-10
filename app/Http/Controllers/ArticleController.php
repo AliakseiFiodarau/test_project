@@ -14,6 +14,14 @@ use Auth;
 class ArticleController extends Controller
 {
     /**
+     * ArticleController constructor.
+     */
+    public function __construct(){
+        $this->middleware('auth')
+        ->only('create');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -25,6 +33,7 @@ class ArticleController extends Controller
         $routeName = $request->route()->getName();
         $articles = Article::with('user')
             ->where('status', 'PUBLISHED')
+            ->orderBy('created_at', 'desc')
             ->paginate(8);
 
         return view('articles.index')->with([

@@ -13,7 +13,7 @@
                             <h1> {{$article->article_name}} </h1>
                             <p>{{mb_substr($article->article_text,
                             0,
-                            250,
+                            228,
                             'utf-8')}}...
                             </p>
                             <h2>{{mb_substr($article->pubdate,

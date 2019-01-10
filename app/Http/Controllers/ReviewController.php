@@ -15,6 +15,15 @@ use Auth;
 class ReviewController extends Controller
 {
     /**
+     * ReviewController constructor.
+     */
+
+    public function __construct(){
+        $this->middleware('auth')
+            ->only('create');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -31,6 +40,7 @@ class ReviewController extends Controller
 
         $reviews = Review::with('user', 'bicycle')
             ->where('status', 'PUBLISHED')
+            ->orderBy('created_at', 'desc')
             ->paginate(8);
 
         return view('reviews.index')->with([
@@ -107,7 +117,7 @@ class ReviewController extends Controller
             ->firstOrFail();
         $user = $review
             ->user;
-        $brand = Brand::where('brand_id', $review->first()->bicycle->brand_id)
+        $brand = Brand::where('brand_id', $review->bicycle->brand_id)
             ->get();
         $comments = Review_Comment::with('user')
             ->where('review_id', $id)
@@ -121,6 +131,7 @@ class ReviewController extends Controller
                 ->where('user_id', Auth::user()->id)
                 ->first();
         }
+
         return view('reviews.show')->with([
             'brands' => $brands,
             'types' => $types,

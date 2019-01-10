@@ -197,7 +197,7 @@
     flex-flow: row;
     padding: 4px;
     height: 110px;
-    min-width: 820px;
+    width: 100%;
 }
 
 .text_image {
